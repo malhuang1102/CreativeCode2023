@@ -15,7 +15,7 @@
 
   <body>
     <!-- navigation menu -->
-    <div class="nav">
+    <nav>
       <h1>Mallory Huang</h1>
       <ul>
         Project <a href="p0.html">#0</a></li>
@@ -29,7 +29,7 @@
         Project <a href="p8.html">#8</a></li>
         Project <a href="p9.html">#9</a></li>
       </ul>
-    </div>
+    </nav>
 
     <!-- main content -->
     <div class="content">
@@ -45,7 +45,7 @@
 
         <iframe 
                 allow="camera"
-          style="width: 400px; height: 800px; overflow: hidden;"
+          style="width: 400px; height: 650px; overflow: hidden;"
           scrolling="no 
            frameborder="0" src="https://editor.p5js.org/jhuan209/full/qK-lpI78m"></iframe>
 
@@ -76,7 +76,7 @@
       </div> Original Sketch </p>
 
     <p>
-    However, translating this image into code was not a very breezy process. I had to depend on the SVG to p5 converter heavily to convert the irregular curves to p5 code. Althought it's quite useful translating simple bezier curves, it sucks at translating more complex drawings. The results weren't optimal and required adjusting the placement of each elements, also because I wanted to still preserve the flexibity to change the colors of the drawing, so instead of coding my drawing in top, middle, bottom, three parts, I devided the whole drawing into layers of shapes. 
+    However, translating this image into code was not a very breezy process. I had to depend on the SVG to p5 converter heavily to convert the irregular curves to p5 code. Althought it's quite useful translating simple bezier curves, it sucks at translating more complex drawings. The results weren't optimal and required adjusting the placement of each elements, also because I wanted to still preserve the flexibity to change the colors of the drawing, so instead of coding my drawing in top, middle, bottom, three parts, I devided the whole drawing into layers of shapes, then "mask" the hidden parts when only 1/3 is needed to complete the composition.
     </p>
 
       <!-- 4. reflection -->
@@ -85,7 +85,7 @@
       </h1>
 
       <p>
-
+      The downside of using the SVG to p5 convert is, I had to use a lot of very specific translate commands to place things where they need to be. This made my functions less flexible when added to other's code - an important reminder to try to design objects in my program more as independent working parts, and always think about how appliable my functions are when more people are buildling the same system.
       </p>
 
   </body>
